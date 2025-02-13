@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(120deg, #ff758c, #ff7eb3);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow: hidden;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carta {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    cursor: pointer;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    background: none;
+    box-shadow: none;
+}
+
+.carta img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: transparent;
+}
+
+.mensaje {
+    display: none;
+    width: 80%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+h1 {
+    font-size: 30px;
+    color: #ffebee;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+}
+
+.nombre {
+    font-size: 24px;
+    color: #ffcccb;
+    font-weight: bold;
+    animation: latido 1s infinite alternate;
+}
+
+@keyframes latido {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+.corazon {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    animation: flotar 4s linear infinite;
+}
+
+@keyframes flotar {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
